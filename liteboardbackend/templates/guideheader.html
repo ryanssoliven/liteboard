@@ -124,5 +124,22 @@
         <div>
             {% block content %}{% endblock %}
         </div>
+        <!-- Division -->
+	    <div class="topnav">
+            &nbsp <br>
+            &nbsp
+        </div>
+    
+        <!-- Footer -->
+        <div class="footer">
+            <div class="centerfooter">
+                <a href="{% url 'home' %}">Framework Summary</a>
+                <a href="{% url 'install' %}">Installation Tutorial</a>
+                <a href="{% url 'demo' %}">Demo Creation</a>
+                <a href="{% url 'demohome' %}">Demo Page</a>
+                <a href="{% url 'conclusion' %}">Conclusion</a>
+                <a href="{% url 'credits' %}">Credits</a>
+            </div>
+        </div>
     </body>
 </html>
