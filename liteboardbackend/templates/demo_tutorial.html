@@ -21,60 +21,6 @@
             <a class="btn-large indigo darken-1 white-text btn">Button</a>
             <a class="btn-large indigo darken-2 white-text btn">Button</a>
             <br>
-            <p>There are also various icons that could be used by nesting an "i" tag, Notice when "waves-effect waves-light" is added it gives a ripple effect when clicked. A button like this was used on the submit page</p>
-            <div class="card-panel"><xmp><a onclick="M.toast({html: 'There is no cake!'})" class="btn-large waves-effect waves-light indigo white-text ">Click For  <i class="large material-icons">cake</i></a></xmp></div>
-            <a onclick="M.toast({html: 'There is no cake!'})" class="btn-large waves-effect waves-light indigo white-text ">Click For  <i class="large material-icons">cake</i></a>
-            <p>The Materialize CSS also alows us to do other cool animations. Here is a case that was used on the demo page where a floating button appears at the botton right after scrolling past a certain point. <br>
-            In this demo it apears after scrolling 90 pixles from the top of the page and disappears after scrolling 1000 pixels from the top. This is especially usful when the navbar of a website is not pinned and buttons get hidden when scrolling down. <br>
-            Having a pinned navbar would take up valuable screen realesate, so it would be better to have a smaller floating button. In order to use this floating action button, it must be initialized using jQuery. And the behaviour of the animation is done through a javascript function. 
-            </p>
-            <div class="card-panel">Initializing the floating button<xmp>
-            <!--Import jQuery before materialize.js-->
-            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            <script>
-            $(document).ready(function(){
-            //Floating Action Button
-                $('.fixed-action-btn').floatingActionButton();        
-            });
-            </script>
-            </xmp></div>
-
-            <div class="card-panel">The Floating Button and it's javascript function<xmp>
-                <div id="add" class="fixed-action-btn">
-                <a class="btn-floating btn-large indigo waves-effect waves-light scale-transition scale-out" href="{% url 'demohome' %}">
-                <i class="large material-icons">arrow_upward</i>
-                </a>
-                </div>
-                <script>
-                    window.onscroll = function() {coolFloatingButton()};
-            
-                    function coolFloatingButton() {
-                    if ((document.body.scrollTop > 90) && (document.body.scrollTop < 1000) ) {
-                        $(".btn-floating").removeClass("scale-out").addClass("scale-in");
-                    } else {
-                        $(".btn-floating").removeClass("scale-in").addClass("scale-out");
-                    }   
-                    }
-                </script>
-            </xmp></div>
-
-            <div id="add" class="fixed-action-btn">
-            <a class="btn-floating btn-large indigo waves-effect waves-light scale-transition scale-out" href="{% url 'demo' %}">
-            <i class="large material-icons">arrow_upward</i>
-            </a>
-            </div>
-            <script>
-                window.onscroll = function() {coolFloatingButton()};
-    
-                function coolFloatingButton() {
-                if ((document.body.scrollTop > 90  && document.body.scrollTop < 1000 || document.documentElement.scrollTop > 90 && document.documentElement.scrollTop < 1000) ) {
-                    $(".btn-floating").removeClass("scale-out").addClass("scale-in");
-                } else {
-                    $(".btn-floating").removeClass("scale-in").addClass("scale-out");
-                }
-                }
-            </script>
 
             <h5>Images</h5>
             <p>Too display images there are a couple options between cards, material boxes, and parrallax. In our demo we decided to use parrallax because it's a unique way of showing images and is used in many modern websites. To parrallax is easy to implement but also needs to be imported throught jQuery.</p>
@@ -82,13 +28,13 @@
                 $('.parallax').parallax();
             </xmp></div>
             <div class="card-panel">The Parrallax component<xmp>
-                 <div class="parallax"><img src="https://i.imgur.com/y8ZpBDz.jpg"/></div>
+                 <div class="parallax"><img src="https://i.cbc.ca/1.5175344.1560502192!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1155815863.jpg"/></div>
             </xmp>
             </div>
         </div>
     </div>
             <div class="parallax-container">
-                <div class="parallax"><img src="https://i.imgur.com/y8ZpBDz.jpg"/></div>
+            <div class="parallax"><img src="https://i.cbc.ca/1.5175344.1560502192!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1155815863.jpg"/></div>
             </div>
     <div class="content">
             <div class="text-content">
@@ -105,12 +51,12 @@
 
             <p>Another method that we played around with was material boxes. They are images that when hovered over it lightens the image, and when clicked it will show the full size of the image and a caption can also be placed in its full state. This also have to be initialized through jQuery.
             <div class="card-panel"><xmp>
-                 $('.materialboxed').materialbox();
+             $('.materialboxed').materialbox();
             </xmp></div>
             <div class="card-panel"><xmp>
-                 <img class="materialboxed image" width="650" src="https://i.imgur.com/Tvtpfn3.jpg" data-caption="The Slave Ship by J.W Turner"/>
+            <img class="materialboxed image" width="650" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kobe_Bryant_2014.jpg/629px-Kobe_Bryant_2014.jpg" data-caption="Kobe Bryant 2014"/>
             </xmp></div>
-                <img class="materialboxed image" width="650" src="https://i.imgur.com/Tvtpfn3.jpg" data-caption="The Slave Ship by J.W Turner"/>
+                <img class="materialboxed image" width="650" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kobe_Bryant_2014.jpg/629px-Kobe_Bryant_2014.jpg" data-caption="Kobe Bryant 2014"/>
             <h3>Django Tutorial</h3>
             <p>
                 On our demo and project website, we utilize Django as a backend framework. While Django is not directly responsible for making our website look beautiful, it’s model-view-template architecture helps ensure beautiful content is easy to create. 
