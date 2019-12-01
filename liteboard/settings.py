@@ -25,7 +25,7 @@ SECRET_KEY = 'removed'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False #When on Digital Ocean, change to false
 
-ALLOWED_HOSTS = [167.99.187.236] 
+ALLOWED_HOSTS = ['167.99.187.236'] 
 
 
 # Application definition
