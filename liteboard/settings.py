@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'liteboard.wsgi.application'
 #else:
 DATABASES = {
    'default': {
-       'ENGINE': 'django.db.backends.postgresql_psycopg2',
+       'ENGINE': 'django.db.backends.postgresql_psycopg2-binary',
        'NAME': 'liteboarddb',
        'USER': 'user1',
        'PASSWORD': 'user1',
