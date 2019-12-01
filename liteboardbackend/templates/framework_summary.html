@@ -1,30 +1,5 @@
 {% extends "guideheader.html" %}
 {% block content %}
-    <!-- Image cycling slideshow CSS -->
-	<div class="slideshow">
-	<img class="mySlides" src="https://i.imgur.com/F33agix.jpg" style="width:750px;height:400px;"> <!-- Put alternate image -->
-	<img class="mySlides" src="https://i.imgur.com/YpdLerm.jpg" style="width:750px;height:400px;">
-	<img class="mySlides" src="https://i.imgur.com/BHn3iZP.png" style="width:750px;height:400px;">
-	</div>
-
-	<!-- Image cycling script -->
-	<script>
-	var myIndex = 0;
-	carousel();
-
-	function carousel() {
-		var i;
-		var x = document.getElementsByClassName("mySlides");
-		for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";  
-		}
-		myIndex++;
-		if (myIndex > x.length) {myIndex = 1}    
-		x[myIndex-1].style.display = "block";  
-		setTimeout(carousel, 4500); // Change image every 3 seconds
-	}
-	</script>
-
 	<!-- Division -->
 	<div class="topnav">
 		&nbsp <br>
@@ -35,60 +10,47 @@
 	<div class="content">
 		<div class="text-content">
 			<div class="frameworkpic">
-				<img src="https://i.imgur.com/eYdhdiz.jpg" style="width:500px;height:300px;"> <!-- Put alternate image -->
+				<img src="https://front.id/sites/default/files/2017-05/materialize.png" style="width:500px;height:300px;"> <!-- Put alternate image -->
 			</div>
 
 			<h3>Materialize CSS</h3>
-			 <p>A responsive front-end framework created by Google. <a href="https://materializecss.com/ ">Materialize</a> is used by developers who want to incorporate material design aesthetics and effects to a webpage. 
-	These include: artistic portfolios, web browsers, professional work portfolios, small businesses and many more. However, its artistic style is very common between 
-	various webpages making it easy to identify which sites are using Materialize. Additionally, it is often considered to be a beginner framework for easy of entry 
-	before moving onto more advanced frameworks. Here are a few examples: <a href=" https://www.android-kiosk.com/ "> Kiosk Browser </a>, 
-	<a href="http://closeheat.com/">Close Heat </a>, and <a href="https://eadbox.com/ ">eadBox</a>.
+			 <p>"Created and designed by Google, <a href="https://materializecss.com/ ">Materialize</a> is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.
+			The framework is also known to be a simpler one so that users can get started fast." (Taken from Materialize website)
   </p>			<h5>Strengths</h5>
-				<p><a href="https://materializecss.com/ ">Materialize.css</a> uses a very simple grid system which allows users to create page layouts efficently.
-					Many users also commented on how clean and contemporary the style and overall presentation the framework
-					provides. Additionally, it has been known for its ease of use, not requiring a large amount of time to learn.
-					One final strength is the variety and choice of components user have. These options allows users to truly customize
-					every aspect of their site.
+				<p>"Materialize.css uses a grid system (much like bootstrap) which allows users to create page layouts. Other strengths include: 
+				1. Speeds up development (We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.) 
+				2. User Experience Focused (By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.) 
+				3. Easy to work with (We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.)" Points taken from materializecss website.
 				</p>
 				
 				<h5>Weaknesses</h5>
-					<p> In terms of weaknesses, while the style and look of <a href="https://materializecss.com/ ">Materialize.css</a> is great, they often lack a unique characteristic to them.
-						Meaning that you can easily spot a site that uses Materialize.css. This is not the case when compared to other frameworks who each have
-						their own sense of unique qualities and flare. A few more things to consider, Materialize.css is very new and is not supported by certain 
-						old browsers. Generally, the size of Material css files are larger in size compared to other frameworks.
+					<p> "Materialize weaknesses include: 1. Materialize CSS does not support some old web browsers. 
+					2. CSS files in Materialize CSS are very large in size and heavy. 3. Certain nesting of elements is handled properly by Materialize CSS." Refer to this <a href="https://www.markupbox.com/blog/top-5-popular-css-frameworks-of-2017/">website</a> for more details. 
 					</p>
 			
 			<br> <br>
 			
 			<div class="frameworkpic">
-				<img src="https://i.imgur.com/qbeXYsH.png" alt="https://i.imgur.com/CWKv7GB.png" style="width:500px;height:300px;">
+				<img src="https://3.bp.blogspot.com/-IW-uGbHmD0g/WczJvppx3_I/AAAAAAAAAIg/7ABfZt_XSs8i7cz4D0u3wUgWVweCzCI1gCLcBGAs/s1600/python-django_big.png" alt="https://i.imgur.com/CWKv7GB.png" style="width:500px;height:300px;">
 			</div>
 				
 			<h3>Django Python</h3>
-				<p>Django is a free open-source high level Python Web framework that aids in rapid web development. In terms of developers, 
-	<a href="https://www.djangoproject.com/">Django</a> is favoured among start-ups due to its scalability of size allowing for any range of products from small to large. 
-	Another key factor of why developers use Django is due to its ability to handle large amounts of site visitor traffic without 
-	being overwhelmed. Some notable websites include the <a href="https://www.washingtonpost.com/?noredirect=on">Washington Post</a>, <a href="https://www.youtube.com/">Youtube
-	</a>, <a href="https://www.google.com/">Google</a>, <a href="https://www.reddit.com/">Reddit</a> and many more. The framework is 
-	built upon the Python programming language which is now considered the most popular for learning code. For this reason, developers 
-	tend to gravitate towards it because it allows them to rollout projects more consistently with more emphasis on creativity over learning 
-	a new language. The types of websites that use Django are often content heavy; <a href="https://www.instagram.com/">Instagram</a>, <a href="https://www.pinterest.ca/">Pinterest</a>, or various news sites for example. 
+				<p>"Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source." (taken from Django website), to learn more about Django click the link:  
+	<a href="https://www.djangoproject.com/">Django</a>. The framework is based on Python, which is considered to be very popular in todays world. 
+	<a href="https://www.youtube.com/">Youtube</a> and <a href="https://www.google.com/">Google</a> are based on Django and there are many more. 
 	</p>
 			
 				<h5>Strengths</h5>
-					<p><a href="https://www.djangoproject.com/">Django</a> remains a staple for python web development and a favourite for developers for its easy learning curve. 
-						This allows for users to dive right in and start creating without having to go through dozens of tutorials. 
-						Additionally, it provides features such as Generating Forms which keeps track of validation and form 
-						rendering further streamlining production. The framework itself is compatible with many utilized databases making it easy to migrate from one database to another. Overall, Django is a very solid framework and worth using.
+					<p>"Django's strengths include: 1. Ridiculously fast (Django was designed to help developers take applications from concept to completion as quickly as possible.)
+					2. Reassuringly secure (Django takes security seriously and helps developers avoid many common security mistakes.) 3. Exceedingly scalable (Some of the busiest sites on the Web leverage Django’s ability to quickly and flexibly scale. This includes Instagram, Youtube, Google and many more)
+					4. Incredibly versatile (Companies, organizations and governments have used Django to build all sorts of things — from content management systems to social networks to scientific computing platforms.)" Refer to the <a href="https://www.djangoproject.com/">Django</a> website for more details.
 						
 					</p>
 				
 				<h5>Weaknesses</h5>
-				<p>While <a href="https://www.djangoproject.com/">Django</a> is very effective, keep in mind there are a few disadvantages to be aware of. 
-					Firstly, in order to maintain backwards compatibility, it tends to be updated less frequently compared to other frameworks. Another factor to consider is the restriction 
-					towards developers implementing their own logic. It goes against having freedom, flexibility and choice of how to implement certain functions which detracts from the overall experience. 
-					One last point to consider is its inability to manage multiple requests simultaneously. Most web systems have methods in place for dealing with multiple requests at once. Keep these in mind if deciding to use Django framework.
+				<p>"Django's weaknesses include: 1. Regex to specify its URL (You can create simple and easy-to-read URLs. However, Django uses regex to specify its URL routing patterns and that makes the code larger and creates complicated syntaxes.) 2. While maintaining backwards compatibility, it's moving far too slowly 
+				(The framework has dedicated itself to backwards compatibility. What does that mean? It tends to get bigger and heavier over time. Speed is a valid issue even in Python, but Django has explicitly chosen to designate other stuff. Django worries more about dev productivity and backwards compatibility than its speed.) 
+				3. It feels like it has too much software for minor projects (Vast functionality and heavy structure are always with you, even if it is not used for simple stuff. A framework is a complex tool for simple usages, so if you ready to face with low flexibility, put your heart and soul into it.)" Refer to this <a href="https://datafloq.com/read/advantages-and-disadvantages-of-using-django/3050">website</a> for more details.
 
 				</p>
 			</div>
