@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
         <head>
-            <title>Web Dev Project</title>
+            <title>CPS530 Final Project</title>
             <meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,8 +12,7 @@
 			<!-- Compiled and minified JavaScript -->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 			
-			<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+			<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         </head>
     <style>
 		* {
@@ -27,7 +26,7 @@
 		}
 		body {
 			margin: 0;
-			font-family: 'Roboto', sans-serif;
+			font-family: 'Lato', sans-serif;
 		}
 		/* Style header */
 		.header {
@@ -37,14 +36,14 @@
 		/* Style the top navigation bar */
 		.topnav {
 			overflow: hidden;
-			background-color: #333;
+			background-color: #DC143C;
 		}
 
 		/* Style the topnav links */
 		.topnav a {
 			float: left;
 			display: block;
-			color: #f2f2f2;
+			color: #f1f1f1;
 			text-align: center;
 			padding: 14px 16px;
 			text-decoration: none;
@@ -56,23 +55,10 @@
 			color: black;
 		}
 
-		/* Style the cycling images */
-		.slideshow {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-		}
-
-		.mySlides {
-			text-align:  center;
-			display:none;
-		}
-
 
 		/* Style the content */
 		.content {
-			background-color: #ddd;
+			background-color: #ffffff;
 			width: 100%;
 			padding-top: 10px;
 			padding-bottom: 10px;
@@ -89,7 +75,7 @@
             text-align: center;
 			margin-top: 30px;
 			margin-bottom: 30px;
-			font-family: 'Roboto Mono', monospace;
+			font-family: "Times New Roman", Times, serif;
 		}
 
 		.profiler {
@@ -123,8 +109,8 @@
 			margin-right: auto;
 			width: 35%;
 		}
-
-		/* Style the footer */
+        
+        /* Style the footer */
 		.footer {
 			background-color: #f1f1f1;
 			padding: 10px;
@@ -145,6 +131,7 @@
 				height: 150px;
 			}
 		}
+
 	</style>
     <body>
         <!-- Navigation Bar -->
@@ -168,9 +155,13 @@
         <!-- Footer -->
         <div class="footer">
             <div class="centerfooter">
-                <p>Sources: <a href="https://www.djangoproject.com/">Django (Python)</a> &nbsp &nbsp  <a href="https://materializecss.com/ ">Materialize CSS</a> 
-                &nbsp &nbsp  Hosted on: <a href="https://www.digitalocean.com/?refcode=6350bfbec950">Digital Ocean</a>&nbsp &nbsp 
-                Project: <a href="http://cps530.scs.ryerson.ca/project/cps530_prj_f18.html">Guidelines</a> </p>
+                <div class="centerfooter">
+                <p><a href="{% url 'home' %}">Framework Summary</a> &nbsp &nbsp  <a href="{% url 'install' %}">Installation Tutorial</a> 
+                &nbsp &nbsp  <a href="{% url 'demo' %}">Demo Creation</a>&nbsp &nbsp 
+                <a href="{% url 'conclusion' %}">Conclusion</a>&nbsp &nbsp
+                <a href="{% url 'credits' %}">Credits</a>
+                </p>
+            </div>
             </div>
         </div>
     </body>
