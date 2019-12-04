@@ -85,8 +85,8 @@ DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql_psycopg2',
        'NAME': 'liteboarddb',
-       'USER': 'user1',
-       'PASSWORD': 'user1',
+       'USER': 'ryan',
+       'PASSWORD': 'admin',
        'HOST': 'localhost',
        'PORT': '',
    }
