@@ -24,7 +24,7 @@
 
             <h5>Images</h5>
             <p>To display images you have the options to choose between cards, material boxes, and parrallax. In this tutorial, we show you how to use parrallax. Parrallax is easy to implement but also needs to be imported throught jQuery.</p>
-            <div class="card-panel">The Parrallax component<xmp>
+            <div class="card-panel" style="color:black">The Parrallax component<xmp>
                  <div class="parallax"><img src="https://i.cbc.ca/1.5175344.1560502192!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1155815863.jpg"/></div>
             </xmp>
             </div>
@@ -33,12 +33,12 @@
             <div class="parallax-container">
             <div class="parallax"><img src="https://i.cbc.ca/1.5175344.1560502192!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/1155815863.jpg"/></div>
             </div>
-    <div class="content">
+    <div class="content" style="color:white; background-color:#696969">
             <div class="text-content">
             <p>Materialize can set certain CSS styles or hide certain content depending on the device. <br>
             To have parrallax work on mobile devices, the height of the image must to be lowered since the image height of parrallax is set to 500 pixels by default.
             </p>
-            <div class="card-panel"><xmp>
+            <div class="card-panel style="color:black""><xmp>
                  @media only screen and (max-width: 600px) {
                     .parallax-container {
                         height: 150px;
@@ -47,10 +47,10 @@
             </xmp></div>
 
             <p>Another method included in this demo is material boxes. These images show when hovered over as it lightens the image. Also, when clicked, the full size of the image will be displayed along with a caption. This must also be initialized through jQuery.
-            <div class="card-panel"><xmp>
+            <div class="card-panel" style="color:black"><xmp>
              $('.materialboxed').materialbox();
             </xmp></div>
-            <div class="card-panel"><xmp>
+            <div class="card-panel" style="color:black"><xmp>
             <img class="materialboxed image" width="650" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kobe_Bryant_2014.jpg/629px-Kobe_Bryant_2014.jpg" data-caption="Kobe Bryant 2014"/>
             </xmp></div>
                 <img class="materialboxed image" width="650" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kobe_Bryant_2014.jpg/629px-Kobe_Bryant_2014.jpg" data-caption="Kobe Bryant 2014"/>
